@@ -78,5 +78,8 @@ exchangeIcon.addEventListener("click", () => {
     let tempVal = dropdowns[0].value;
     dropdowns[0].value = dropdowns[1].value;
     dropdowns[1].value = tempVal;
+
+    updateFlag(dropdowns[0]);
+    updateFlag(dropdowns[1]);
     updateExchangeRate();
 });
